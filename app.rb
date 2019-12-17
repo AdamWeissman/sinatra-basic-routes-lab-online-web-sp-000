@@ -7,16 +7,16 @@ class App < Sinatra::Base
       "My name is Adam"
     end
     
-    #get arg2 do
-    #  "My hometown is Eastchester"
-    #end
+    get arg2 do
+      "My hometown is Eastchester"
+    end
     
-    #get arg3 do
-    #  "My favorite-song is New York New York"
-    #end
+    get arg3 do
+      "My favorite-song is New York New York"
+    end
   end
   
-  one_for_all("/name")
+  one_for_all("/name", "/hometown", "/favorite-song")
     
   
   
