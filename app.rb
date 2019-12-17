@@ -2,7 +2,7 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   
-  def self.one_for_all(arg1)
+  def self.one_for_all(arg1, arg2, arg3)
     get arg1 do
       "My name is Adam"
     end
