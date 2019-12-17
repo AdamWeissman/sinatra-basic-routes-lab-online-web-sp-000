@@ -2,6 +2,9 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
+hash.map { |k,v| [k, v.to_sym] }.to_h
+
+
   def self.one_for_all(*args)
     args.each do 
       
