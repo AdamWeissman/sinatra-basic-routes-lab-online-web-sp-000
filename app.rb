@@ -2,22 +2,21 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   
-  def self.one_for_all(arg1, arg2, arg3)
+  def self.one_for_all(arg1)
     get arg1 do
       "My name is Adam"
     end
     
-    get arg2 do
-      "My hometown is Eastchester"
-    end
+    #get arg2 do
+    #  "My hometown is Eastchester"
+    #end
     
-    get arg3 do
-      "My favorite-song is New York New York"
-    end
+    #get arg3 do
+    #  "My favorite-song is New York New York"
+    #end
   end
   
-  self.one_for_all("name", "hometown", "favorite-song")
-
+  self.one_for_all("/name")
     
   
   
