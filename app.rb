@@ -12,7 +12,7 @@ class App < Sinatra::Base
     end
     
     get arg3 do
-      "My favorite-song is New York New York"
+      "My favorite song is __"
     end
   end
   
