@@ -16,7 +16,7 @@ class App < Sinatra::Base
     #end
   end
   
-  self.one_for_all("/name")
+  one_for_all("/name")
     
   
   
