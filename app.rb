@@ -4,11 +4,17 @@ class App < Sinatra::Base
 
 hash.map { |k,v| [k, v.to_sym] }.to_h
 
+hash = { bacon: "protein", apple: "fruit" }
+hash.map { |k,v| [k, v.to_sym] }.to_h
+# {:bacon=>:protein, :apple=>:fruit}
+
 
   def self.one_for_all(the_stuff)
     the_stuff.each do {k, v}
       get k do
         v
+      end
+    end
     
   end  
       
